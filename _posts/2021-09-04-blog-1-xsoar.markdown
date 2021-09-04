@@ -21,7 +21,7 @@ After you login to your XSOAR server, you'll land on the Dashboards page. Here y
 # **Next Week**
 The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
 
-# **More info**
+# **More Info**
 [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
 
 [Cortex XSOAR Docs](https://xsoar.pan.dev/)
