@@ -18,7 +18,7 @@ layout: home
     </style>
   </head>
   <body>
-    <img src="images/detective-pikachu-dance.gif" class="center">
     <h1>Welcome to my CIT480 Blog!</h1>
+    <img src="images/detective-pikachu-dance.gif" class="center">
   </body>
 </html>
