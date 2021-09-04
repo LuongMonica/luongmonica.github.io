@@ -16,6 +16,7 @@ layout: home
                 width: 50%;
             }
     </style>
+  <link rel="pikachu-icon" sizes="180x180" href="/assets/pikachu-favicon.png">
   </head>
   <body>
     <center> <h1>Welcome!</h1> </center>
