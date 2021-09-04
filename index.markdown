@@ -19,6 +19,6 @@ layout: home
   </head>
   <body>
     <center> <h1>Welcome!</h1> </center>
-    <img src="images/detective-pikachu-dance.gif" class="center" border="1">
+    <img src="assets/detective-pikachu-dance.gif" class="center" border="1">
   </body>
 </html>

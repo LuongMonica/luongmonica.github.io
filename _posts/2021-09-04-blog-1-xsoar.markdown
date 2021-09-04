@@ -4,7 +4,7 @@ title:  "Blog 1 - Cortex XSOAR"
 date:   2021-09-04 9:59:31 -0700
 categories: jekyll update
 ---
-![Cortex XSOAR logo](/images/xosar logo.png)
+![Cortex XSOAR logo](/assets/xosar-logo.png)
 
 # Intro to Cortex XSOAR
 Cortex XSOAR... have you heard of it? If you're really into security you just might have! Cortex XSOAR is an extended security orchestration, automation, and response tool from Palo Alto Networks. It's used primarily by security operations teams to view incidents, manage tickets, and automate incident response workflows. 
