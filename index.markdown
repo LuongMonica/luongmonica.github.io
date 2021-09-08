@@ -20,5 +20,6 @@ layout: home
   <body>
     <center> <h1>Welcome!</h1> </center>
     <img src="assets/detective-pikachu-dance.gif" class="center" border="1">
+    <center> <a href="https://youtu.be/xU3BiUMUkc4"> Detective Pikachu </a> </center>
   </body>
 </html>
