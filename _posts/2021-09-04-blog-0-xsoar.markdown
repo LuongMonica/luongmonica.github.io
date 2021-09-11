@@ -35,7 +35,9 @@ The book icon is for navigating to your playbooks. Playbooks are where a lot of 
 
 ![Cortex XSOAR Automation](/assets/xsoar-automation.png)
 
-The automation tab (lightning icon) is where you'll upload/write your automation scripts. You can write them in either JavaScript or, my preferred language, Python. If you label them specific things like "Conditional" or "Utility", you'll be able to use them in your playbook for those specific types of tasks. 
+The automations tab (lightning icon) is where you'll upload/write your automation scripts. You can write them in either JavaScript or, my preferred language, Python. If you label them specific things like "Conditional" or "Utility", you'll be able to use them in your playbook for those specific types of tasks.
+
+The picture above shows the PyCharm IDE Plugin that allows you to write Python automations in PyCharm. It's very useful because you can test inputs and run your scripts in it. 
 
 ![Cortex XSOAR Marketplace](/assets/xsoar-marketplace.png)
 
@@ -43,7 +45,7 @@ The marketplace is where you'll go to find new integrations. Integrations are 3r
 
 ![Cortex XSOAR Settings](/assets/xsoar-settings.png)
 
-The cog wheel is the settings icon. It's a bit of a misnomer because it doesn't just have things you would consider "settings". Besides just server configuration options, you'll also create lists and indicator fields, add any pre-process rules, and more.
+The cog wheel is the settings icon. It's a bit of a misnomer because it doesn't just have things you would consider "settings". Besides just server configuration options, you'll also create lists and indicator fields, add pre-process rules, create mappings, and more.
 
 ![Cortex XSOAR Playground](/assets/xsoar-playground.png)
 
