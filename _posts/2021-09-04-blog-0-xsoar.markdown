@@ -4,6 +4,7 @@ title:  "Blog 0 - Cortex XSOAR pt. 1"
 date:   2021-09-04 9:59:31 -0700
 categories: jekyll update
 ---
+
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
 
 # **Intro to Cortex XSOAR**
@@ -12,11 +13,43 @@ Cortex XSOAR... have you heard of it? If you're really into security you just mi
 However, there's other use cases too! Since it has the power of automation behind it, you can use it to automate any workflows you have. For example, use it for user lifecycle management; activate new hires on their hire date, provision the necessary apps and permissions for them, and disable and terminate their accounts on their end date. There's so many possibilities with XSOAR!
 
 # **Some Basics**
-Let's familiarize ourselves with the general layout.
+Let's familiarize ourselves with the general layout. We'll also go down the list of icons on the left-hand side. 
 
-![Cortex XSOAR Home](/assets/xsoar-image.png)
+![Cortex XSOAR Home](/assets/xsoar-dashboard.png)
+
+At the bottom you'll see a bar with a blue exclamation mark. In there, you can run system or manual commands. If you click on the exclamation mark, you can pull up the list of commands you can run.
 
 After you login to your XSOAR server, you'll land on the Dashboards page. Here you'll find info on all your incidents. You can create more dashboards detailing things like the types of incidents, the severity, and who is assigned to what.
+
+![Cortex XSOAR Reports](/assets/xsoar-reports.png)
+
+Underneath the home/dashboards icon is the icon for reports. Here you can schedule reports to be created as pdfs or word docs. There are default reports, such as critical and high incidents, or you could create customized ones with your own filters.
+
+![Cortex XSOAR Indicator](/assets/xsoar-indicator.png)
+
+The icon that looks like a sign post is for indicators. Indicators are basically labels. XSOAR uses indicators to categorize events. 
+
+![Cortex XSOAR Playbook](/assets/xsoar-playbook.png)
+
+The book icon is for navigating to your playbooks. Playbooks are where a lot of the magic happens. They are basically a set of tasks that follow a flow to take actions you define. You can have them run automatically by scheduling them as jobs or do it manually with the `!Set-Playbook` command. 
+
+![Cortex XSOAR Automation](/assets/xsoar-automation.png)
+
+The automations tab (lightning icon) is where you'll upload/write your automation scripts. You can write them in either JavaScript or, my preferred language, Python. If you label them specific things like "Conditional" or "Utility", you'll be able to use them in your playbook for those specific types of tasks.
+
+The picture above shows the PyCharm IDE Plugin that allows you to write Python automations in PyCharm. It's very useful because you can test inputs and run your scripts in it. 
+
+![Cortex XSOAR Marketplace](/assets/xsoar-marketplace.png)
+
+The marketplace is where you'll go to find new integrations. Integrations are 3rd-party tools and services that can do things like authentication, case management, database management, endpoint detection, etc. My favorite is Active Directory Admin. There are 600+ integrations for you to explore!
+
+![Cortex XSOAR Settings](/assets/xsoar-settings.png)
+
+The cog wheel is the settings icon. It's a bit of a misnomer because it doesn't just have things you would consider "settings". Besides just server configuration options, you'll also create lists and indicator fields, add pre-process rules, create mappings, and more.
+
+![Cortex XSOAR Playground](/assets/xsoar-playground.png)
+
+The playground, or war room, is a non-prod environment where you can run your playbooks, manual commands, or test automation scripts. You'll be spending a lot of time here, so get familiar with it!
 
 # **Next Week**
 The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
