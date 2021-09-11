@@ -12,13 +12,39 @@ Cortex XSOAR... have you heard of it? If you're really into security you just mi
 However, there's other use cases too! Since it has the power of automation behind it, you can use it to automate any workflows you have. For example, use it for user lifecycle management; activate new hires on their hire date, provision the necessary apps and permissions for them, and disable and terminate their accounts on their end date. There's so many possibilities with XSOAR!
 
 # **Some Basics**
-Let's familiarize ourselves with the general layout.
+Let's familiarize ourselves with the general layout. We'll also go down the list of icons on the right-hand side. 
 
 ![Cortex XSOAR Home](/assets/xsoar-image.png)
 
+At the bottom you'll see a bar with a blue exclamation mark. In there, you can run system or manual commands. If you click on the exclamation mark, you can pull up the list of commands you can run.
+
 After you login to your XSOAR server, you'll land on the Dashboards page. Here you'll find info on all your incidents. You can create more dashboards detailing things like the types of incidents, the severity, and who is assigned to what.
 
-If we take a look at the icons on the side, we'll go over the other ones. 
+![Cortex XSOAR Reports](/assets/xsoar-reports.png)
+
+Underneath the home/dashboards icon is the icon for reports. Here you can schedule reports to be created as pdfs or word docs. There are default reports, such as critical and high incidents, or you could create customized ones with your own filters.
+
+![Cortex XSOAR Event](/assets/xsoar-event.png)
+
+
+![Cortex XSOAR Indicator](/assets/xsoar-indicator.png)
+
+
+![Cortex XSOAR Playbook](/assets/xsoar-playbook.png)
+
+
+![Cortex XSOAR Automation](/assets/xsoar-automation.png)
+
+
+![Cortex XSOAR Marketplace](/assets/xsoar-marketplace.png)
+
+
+![Cortex XSOAR Settings](/assets/xsoar-settings.png)
+
+
+![Cortex XSOAR Playground](/assets/xsoar-playground.png)
+
+The playground, or war room, is a non-prod environment where you can run your playbooks, manual commands, or test automation scripts. You'll be spending a lot of time here, so get familiar with it!
 
 # **Next Week**
 The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
