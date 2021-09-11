@@ -18,6 +18,8 @@ Let's familiarize ourselves with the general layout.
 
 After you login to your XSOAR server, you'll land on the Dashboards page. Here you'll find info on all your incidents. You can create more dashboards detailing things like the types of incidents, the severity, and who is assigned to what.
 
+If we take a look at the icons on the side, we'll go over the other ones. 
+
 # **Next Week**
 The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
 
