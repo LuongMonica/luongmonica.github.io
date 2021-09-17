@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Blog 1 - Cortex XSOAR pt. 2"
+date:   2021-09-17 9:59:31 -0700
+categories: jekyll update xsoar panw
+---
+
+![Cortex XSOAR logo](/assets/xsoar-logo.png)
+
+# **Recap of Last Week**
+Last week, we started learning about Cortex XSOAR, a security orchestration, automation, and response tool from Palo Alto Networks. We did a basic overview of each of the sections, including playbooks, the playground, and automations. Let's continue by going a little deeper into 2 topics: commands and playbooks.
+
+# **Commands**
+Commands are divided into 2 types: system commands, which start with `/`, and external commands, which start with `!`. System commands are XSOAR specific operations such as clearing the playground, running a playbook, or closing an incident. An example is `/playground_create`. These commands aren't specific to an integration. External commands, on the other hand, *are* integration-specific commands. Here's an example, to add an AD user to a group: `!ad-add-to-group monica cit480group`.
+
+# **Playbooks - Basics**
+If you forgot what playbooks are, they're task-based graphical workflows that can be run automatically. 
+
+![Example of a Playbook](/assets/xsoar-playbook.png)<font size="2.75px"><em>Example of a playbook</em></font>
+
+Each task has a different icon to show what type of task it is. The icon that looks like a greater than symbol (>) shows that the task is a regular command that will go on to the next task after it completes. The diamond icon shows that it's a conditional task. The result of the task will define which path the flow will follow. The book icon shows that the task is a playbook. This means you can nest playbooks within each other. Using sub-playbooks is how you would accomplish a loop. 
+
+If you want to take a look under the covers of the task, click on the lightning bolt to view the script that the task is running. 
+
+You can also create section headers to organize your flows. Think of these headers as comments. It's best practice to create a "Done" header so you know that the flow is finished.
+
+Although you'll create playbooks by piecing together tasks and connecting them with arrows to define the flow, it's important to know that they're written in YAML behind the scenes. You'll see this when you download a playbook and get a yml file. 
+
+# **Next Week**
+The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
+
+# **More Info**
+[Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
+
+[Cortex XSOAR Docs](https://xsoar.pan.dev/docs/concepts/getting-started-guide)
