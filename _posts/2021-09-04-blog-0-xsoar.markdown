@@ -2,7 +2,7 @@
 layout: post
 title:  "Blog 0 - Cortex XSOAR pt. 1"
 date:   2021-09-04 9:59:31 -0700
-categories: jekyll update
+categories: jekyll update xsoar panw
 ---
 
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
@@ -57,4 +57,4 @@ The next blog post will be a continuation of this one. Look forward to continue 
 # **More Info**
 [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
 
-[Cortex XSOAR Docs](https://xsoar.pan.dev/)
+[Cortex XSOAR Docs](https://xsoar.pan.dev/docs/concepts/getting-started-guide)
