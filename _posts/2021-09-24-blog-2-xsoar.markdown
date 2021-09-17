@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Blog 1 - Cortex XSOAR pt. 3 (WIP - Stay Tuned!)"
+date:   2021-09-17 9:59:31 -0700
+categories: jekyll update xsoar panw
+---
+
+![Cortex XSOAR logo](/assets/xsoar-logo.png)
+
+# **Recap of Last Week**
+Last week, we 
+
+# **Playbooks - Basics**
+
+
+![Example of a Playbook](/assets/xsoar-sub-playbook.png)<font size="2.75px"><em>Loop sub-playbook</em></font>
+
+
+
+# **Next Week**
+The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
+
+# **More Info**
+[Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
+
+[Cortex XSOAR Docs](https://xsoar.pan.dev/docs/concepts/getting-started-guide)
+
+[Sub-playbook Tutorial](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/configure-a-sub-playbook-loop/sub-playbook-tutorial.html)
