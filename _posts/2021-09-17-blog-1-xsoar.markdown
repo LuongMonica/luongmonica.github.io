@@ -8,13 +8,15 @@ categories: jekyll update xsoar panw
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
 
 # **Recap of Last Week**
-Last week, we started learning about Cortex XSOAR, a security orchestration, automation, and response tool from Palo Alto Networks. We did a basic overview of each of the sections, including playbooks, the playground, and automations. 
+Last week, we started learning about Cortex XSOAR, a security orchestration, automation, and response tool from Palo Alto Networks. We did a basic overview of each of the sections, including playbooks, the playground, and automations. Let's continue by going a little deeper into 2 topics: playbooks and commands.
 
-# **Let's Talk More About Playbooks**
-Let's familiarize ourselves with the general layout. We'll also go down the list of icons on the left-hand side. 
+# **Playbooks**
+If you forgot what playbooks are, they're task-based graphical workflows that can be run automatically. Although you'll create playbooks by piecing together tasks and connecting them with arrows to define the flow, it's important to know that they're written in YAML behind the scenes. You'll see this when you download a playbook and get a yml file. 
 
-![Alt Text](/assets/pic.png)
+![Example of a Playbook](/assets/xsoar-playbook.png)
 
+# **Commands**
+Commands are divided into 2 types: system commands, which start with `/`, and external commands, which start with `!`. System commands are XSOAR specific operations such as clearing the playground, running a playbook, or closing an incident. An example is `/playground-create`. These commands aren't specific to an integration. External commands are integration-specific commands. For example, to add an AD user to a group: `!ad-add-to-group monica cit480group`.
 
 # **Next Week**
 The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
@@ -22,4 +24,4 @@ The next blog post will be a continuation of this one. Look forward to continue 
 # **More Info**
 [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
 
-[Cortex XSOAR Docs](https://xsoar.pan.dev/)
+[Cortex XSOAR Docs](https://xsoar.pan.dev/docs/concepts/getting-started-guide)

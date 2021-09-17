@@ -57,4 +57,4 @@ The next blog post will be a continuation of this one. Look forward to continue 
 # **More Info**
 [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
 
-[Cortex XSOAR Docs](https://xsoar.pan.dev/)
+[Cortex XSOAR Docs](https://xsoar.pan.dev/docs/concepts/getting-started-guide)
