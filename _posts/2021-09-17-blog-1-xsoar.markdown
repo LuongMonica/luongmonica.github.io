@@ -2,7 +2,7 @@
 layout: post
 title:  "Blog 1 - Cortex XSOAR pt. 2"
 date:   2021-09-17 9:59:31 -0700
-categories: jekyll update xsoar panw
+categories: jekyll update
 ---
 
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
