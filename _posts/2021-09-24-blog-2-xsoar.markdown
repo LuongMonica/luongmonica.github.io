@@ -3,20 +3,27 @@ layout: post
 title:  "Blog 2 - Cortex XSOAR pt. 3"
 date:   2021-09-24 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
 
 # **Recap of Last Week**
-Last week, we 
+Last week, we went over the 2 types of commands: system and external. We also talked more about playbooks and the different type of tasks they could be made up of, including sub-playbooks and conditionals.
 
-# **Playbooks - Basics**
+Now, let's talk more about writing playbooks, specifically how to do a loop.
 
+# **Playbooks - Loops**
+So, we already know what playbooks are. They're basically just a set of tasks, each of which perform a specific action. If you're familiar with Ansible, it's similar to that. The main differences are that XSOAR playbooks are graphical and they can include manual tasks in addition to automated tasks. An example of a manual task could be sending an email and waiting for a user response to use as input. This allows them to be pretty extensible. 
+
+However, there is some weirdness and annoyances that come along with XSOAR. It is a relatively new product after all, and features that established products or languages have aren't all implemented yet. Sometimes you might find it difficult to do something that would be infinitely easier if you just did it in a script (automation) instead. There are also other times where you just have to learn how to do what you want the XSOAR way. One such example of this is how looping is achieved. 
+
+![Loops - For vs. While](/assets/loops-diagram.png)<br/><font size="2.75px"><em>Traditional Loops - For and While</em></font>
+
+A traditional programming language usually has a few basic types of loops: 'for', 'while', and sometimes 'until' (a nice syntactic sugar to have). Now, XSOAR of course does have looping. However, the way that you achieve looping might not be as straight-forward as you think, especially when you're still learning the basics of XSOAR. To do a 'for each' loop, you can't just create an arrow and drag it to the top of the block of tasks you want to loop. Instead, you have to place the set of tasks you wish to loop into another playbook. Next, add that playbook into your main playbook (which has the rest of your tasks). Finally, under the **Loop** tab of the task/sub-playbook, select **For Each Input**. The loop will exit automatically when the array it is looping over executes the last item in the array. You can achieve the other types of loops, which exit based on a condition, by selecting either **Built-in** or **Choose Loop automation**, depending on your needs. 
 
 ![Example of a Playbook](/assets/xsoar-sub-playbook.png)<font size="2.75px"><em>Sub-playbook loop</em></font>
 
-
+For more information, check out the links below. I recommend looking at the Sub-playbook Loop link.
 
 # **Next Week**
 The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
@@ -25,5 +32,7 @@ The next blog post will be a continuation of this one. Look forward to continue 
 [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
 
 [Cortex XSOAR Docs](https://xsoar.pan.dev/docs/concepts/getting-started-guide)
+
+[Sub-playbook Loop](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/configure-a-sub-playbook-loop.html)
 
 [Sub-playbook Tutorial](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/configure-a-sub-playbook-loop/sub-playbook-tutorial.html)
