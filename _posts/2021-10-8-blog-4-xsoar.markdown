@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Blog 3 - Cortex XSOAR pt. 4"
+title:  "Blog 4 - Cortex XSOAR pt. 5"
 date:   2021-10-01 9:59:31 -0700
 categories: jekyll update
+published: false
 ---
 
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
@@ -12,7 +13,7 @@ Last week, we talked more about playbooks and went over an important part of wri
 
 Now, let's talk more about writing playbooks, specifically conditionals.
 
-# **Playbooks - Conditionals**
+# **Playbooks - Conditionals and Filters & Transformers**
 
 ![Conditional](/assets/xsoar-conditional.png)<br/><font size="2.75px"><em>Conditional task</em></font>
 
