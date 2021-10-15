@@ -3,7 +3,6 @@ layout: post
 title:  "Blog 5 - Cortex XSOAR pt. 6"
 date:   2021-10-15 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 
 ![Cortex XSOAR logo](/assets/xsoar-logo.png)
@@ -11,54 +10,24 @@ published: false
 # **Recap of Last Week**
 Last week, we talked about how data is stored in context and how it can be manipulated through filters and transformers.
 
-# **Context**
-Data in XSOAR is stored in what is called "context data". The context is structured as a dictionary (key-values)/JSON object. 
+Today we'll talk about inputs and outputs for playbooks.
 
-Below is a snippet of what is placed into the context by the ThreatStream integration command, `threat-stream-analysis-report`:
+# **Playbook Inputs**
+Just like how a function (or method in Java) can have parameters with values which act as input for the function, playbooks can also take input. You can even think about sub-playbooks as black boxes. All you need to do is pass in the correct parameters. 
 
-```
-{
-    "Category": "File",
-    "Duration": 68,
-    "Network": [
-        {
-            "UdpDestination": "8.8.8.8",
-            "UdpPort": 53,
-            "UdpSource": "192.168.2.4"
-        },
-        {
-            "UdpDestination": "192.168.2.4",
-            "UdpPort": 65324,
-            "UdpSource": "8.8.8.8"
-        },
-        {
-            "UdpDestination": "192.168.2.4",
-            "UdpPort": 54896,
-            "UdpSource": "8.8.8.8"
-        }
-    ],
-    "ReportID": "413336",
-    "Started": "2019-05-30 14:05:25",
-    "Verdict": "Benign"
-}
-```
+![Playbook Inputs](/assets/xsoar-inputs.png)<br/><font size="2.75px"><em>Inputs for a playbook</em></font>
 
-Tasks in a playbook can then use the data in context. To access the context directly, you have to use dot notation and provide the context path. For example, if I wanted to find out the verdict of the report, I could say `Verdict.[0]`. If I wanted to find out the 2nd incident's UDP Destination IP, I'd say `Network.[1].UdpDestination`. To get the value of something in context in a playbook, you should wrap the path like this: `${Network.[1].UdpDestination}`
+When setting inputs for playbooks, you can make them optional or mandatory. If you don't pass in a value for an optional input, no error will occur. However, if you require an input to be mandatory and don't pass a value in, the playbook will run into an error and stop. You can also give inputs a default value, which will be overriden if you pass in a different value to the playbook. You can also set a description to each input parameter. It's always good practice to add a short description so that anyone looking at the playbook can easily figure out the purpose of having that input. Documentation is extremely important! No one will ever be mad at having more information than none. 
 
-# **Playbooks - Filters & Transformers**
+# **Playbook Outputs**
+Again, similar to traditional programming functions, playbooks too can return outputs. Of course, if you're using a playbook to simply automate some tasks, like activating a user's AD account a day before their hire date, you won't necessarily need any outputs to be returned. Think carefully about the data you need for a task. You don't want to clog up the context data by creating unnecessary objects that won't be used for another playbook down the road. 
 
-![Filter](/assets/xsoar-filter.png)<br/><font size="2.75px"><em>Filter UI</em></font>
+![Playbook Outputs](/assets/xsoar-outputs.png)<br/><font size="2.75px"><em>Outputs for a playbook</em></font>
 
-Now let's talk about manipulating the data that was stored in context. 
-
-You can use a filter to extract the relevant data you want. For example, if an incident has several files with varying file types and extensions, you can filter the files by file extension or file type. Then you can use those filtered files in the subsequent tasks to operate on them. Another example could be, a previous `ad-search` task returned the list of users whose passwords have expired. However, that list is particularly large. You can use a filter to divide the list in half. Then you can operate on the 2 separate lists to improve performance. See all the [Filter Operators](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/filters-and-transformers/filter-operators.html).
-
-Transformers allow you take in a value, operate on it, and transform or render it into another value. Examples include changing 1 data type to another (like an array to string or non-Unix date to Unix date), splitting an array by a delimiter, concatenating a string, or getting a count of the number of elements in an array. See all the [Transformer Operators](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/filters-and-transformers/transformers-operators.html).
-
-In a playbook, after adding filters/transformers on a field, you can test it out by clicking the **Test** button before save and exit the Task edit. This is incredibly useful and you should get into the habit of testing this way before you actually run the playbook. 
+An important thing to note about outputs is that you can set the data type for each of them. This matters because it will limit the type of operations you can do on the output objects. Using the picture above for example, `Endpoint.OS` has its data type set to string. This means that you won't be able to use any operators or transformers like Array to String. You can always set the data type to be Unknown, however you should set a specific data type if you know what it will be. This way if you get garbage input for that value later on, like a numerical value when it should be a string, you can validate your input and know that it's incorrect.  
 
 # **Next Week**
-The next blog post will be a continuation of this one. Look forward to continue learning about XSOAR!
+I'm still unsure what the next blog post will be about, but this might be the end of my series on Cortex XSOAR. I hope you enjoyed reading about XSOAR and I encourage you to try it out if you can. It's got a bit of a learning curve, but it is definitely an exciting tool to use!
 
 # **More Info**
 [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar)
@@ -74,3 +43,5 @@ The next blog post will be a continuation of this one. Look forward to continue 
 [Filters and Transformers](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/filters-and-transformers.html)
 
 [Create Filters and Transformers in a Playbook](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/filters-and-transformers/create-filters-and-transformers.html)
+
+[Playbook Inputs and Outputs](https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-0/cortex-xsoar-admin/playbooks/playbook-inputs-and-outputs.html)
