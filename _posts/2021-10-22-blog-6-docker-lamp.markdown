@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 6 - Docker-Compose: LAMP Stack"
+title:  "Blog 6 - Docker-Compose: LAMP Stack pt.1"
 date:   2021-10-22 9:59:31 -0700
 categories: jekyll update
 ---
