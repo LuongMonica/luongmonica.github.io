@@ -5,46 +5,51 @@ date:   2021-11-12 9:59:31 -0700
 categories: jekyll update
 published: false
 ---
-![MEAN/MERN Stack](/assets/mean-stack-vs-mern-stack.jpg)
+![JavaScript](/assets/javascript.png)
 # **Intro**
-In last week's blog post, I explained and walked through one of my past projects. We created a 2-tier LAMP stack using Docker/Docker-Compose. Today we'll be discussing another type of full stack: MEAN/MERN.
+In last week's blog post, I talked about the MEAN/MERN stack. I discussed each of the components and why you might choose a MEAN/MERN stack. Since my group will be using a MERN stack, we're learning JavaScript together. This week I'll be talking about JavaScript and some of the basics.
 
-# **What is MEAN/MERN?**
+# **Basics**
+First of all, what is JavaScript? It's a programming language, that alongside HTML and CSS, is one of the core technologies of the World Wide Web. JS is able to be run both on the client-side and server-side, with most web browsers being able to run it natively. I should point out that Java and JavaScript, although sharing a part of the name, are two completely different languages. That isn't to say they don't share some similarities in things like syntax, however. So, now that we know some more about JS, let's dive into its data types, how to declare variables, how to print, and other basics.
 
+## Printing and Comments
+The first thing you have to do in every programming language is "Hello World" right? Well, in JS we act on the `console` object and use the `.log` method in order to print to the screen. Comments are the same as Java. Take a look at the code block below:
 
-![MEAN/MERN Stack](/assets/mern-stack-architecture.jpg)<br/><font size="2.75px"><em>3-tier architecture of MERN stack</em></font>
+```
+// single-line comment
+/* block or
+multi-line
+comment */
+console.log("Hello World")
+```
 
+## Data Types
+In JS, there are 7 data types: string, number, boolean, null, undefined, symbol, and object. Strings, numbers, boolean, and null types are pretty standard to any programming language and don't need to be explained. The difference between null and undefined is that a variable will be undefined if it was declared but not given a value. Null, meanwhile, is the (absence of) value. Symbols are unique identifiers that won't explain more about yet. Finally, objects are just collections of data. The first 6 data types are considered primitive data types. 
 
-Just like how a LAMP stack is comprised of 4 software components, a MEAN/MERN stack is as well. However, a MEAN/MERN stack is a 3-tier architecture (front-end, application, and database) as opposed to LAMP's 2-tier (application/web server and database). LAMP is a lower-level stack compared to MEAN/MERN because it defines the OS (Linux) and the web server (Apache). MEAN/MERN is a much higher level because it defines the front-end with Angular(JS) or React. Let's take a look at each of the pieces:
-- **M**ongoDB
-    - This layer is the database; it's at the bottom of all the other layers. It's probably the biggest difference from a LAMP stack because it uses a NoSQL, document database instead of a SQL, relational database (like MySQL). MongoDB is designed to store JSON data natively.
-- **E**xpress
-    - This layer is part of the server layer. Express is used to route HTTP requests to the appropriate handler. This means you can respond to HTTP requests to a URI endpoint by doing some pre-defined action. For example, let's say we have a web app that stores user-inputted data on books. Thus, you might respond to a GET request to the `/book` endpoint by providing the list of all books in the database.
-- **A**ngular(JS) / **R**eact
-    - This layer is the front-end which sits on top of the other layers. Both Angular(JS) and React handle connecting the UI with the program's business logic. Using React means a simpler and advanced UI that handles data changes quickly. Using Angular(JS) means being able to handle a large, enterprise level app because of its use of MVC (Model View Controller) to create a complete architecture.
-- **N**ode
-    - This layer is another part of the server layer. It is situated below Express. Node is *the* web server framework that many JS frameworks are built on top of. 
+## Variables
+Since JS is dynamically typed, you don't have to explicitly declare the data type of the variable. You can declare variables 3 ways, using the keywords: `var`, `let`, or `const`. `var` was the only general way to declare variables pre-ES6 (version 6 of ECMAScript or ES, another name for JS). `let` is the newer keyword introduced in ES6 and is often preferred. There are some differences between `var` and `let` but I won't get into it here. To read more about it, visit [this link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let). `const` is another way to declare a variable, however after declaration you aren't able to modify the value of that constant variable. 
 
-So why might you choose a MEAN/MERN stack over a LAMP stack? Well, you might choose a MEAN/MERN stack if:
-- your data isn't highly structured,
-    - MongoDB is a NoSQL database that stores it's data in JSON format. It's not meant for highly rigid data like what would be stored in a MySQL/MariaDB/etc database.
-- you/your team is well-versed in JS (JavaScript),
-    - Express: JS, AngularJS: JS, React: JS, Node: JS. You get the point right? Each of the programming components all use JS. Even MongoDB is built for **JavaScript** Object Notation data. JS is the body and blood of this stack. This is great if you have a team of people who know JavaScript. It's also great if you have full-stack developers because they won't have to switch between HTML/CSS/JS then to Python/PHP when they go from front-end to back-end. 
-- you want to learn a modern stack.
-    - LAMP has been around for quite awhile. MEAN/MERN is becoming more and more popular as we seek web apps that are faster and more responsive.
+```
+// Examples of variable declaration
+const myName = "Monica";
+var school = "CSUN";
+let gradeLevel = 4;
+```
 
-Also, keep in mind that technology stacks aren't exactly the most rigid outlines for web app development. You can pick and choose different components and create your own version of a stack. This is how MERN came to be; it's just one of the many variations of the MEAN stack. Another is MEVN (V=Vue). Do the research and find out what works best for what you are trying to build.
+## String Interpolation
+Another great feature of ES6 is the ability to use string interpolation. This means we insert, or interpolate, variables into strings using *template literals*. Take a look at the code below to see it in action: 
+
+```
+let favPokemon = "Pikachu";
+console.log(`${favPokemon} is my favorite Pokemon. Just too cute!`);
+```
+
+Wrap the template literal in backticks (\`) and put a placeholder `${variable}` to insert the actual value of the variable into the template literal. String interpolation is great because it makes things more readable!
 
 # **Next Week**
-Again, I'm not sure what my next blog will be about, but stay tuned! I might talk more about JavaScript and my journey in learning it.
+I'll probably continue JS next week so stay tuned!
 
 # **More Info**
-[MongoDB](https://www.mongodb.com/)
+[MDN Docs - JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
 
-[Express](https://expressjs.com/)
-
-[AngularJS](https://angularjs.org/)
-
-[React](https://reactjs.org/)
-
-[Node](https://nodejs.org/)
+[Codecademy - JS](https://www.codecademy.com/learn/introduction-to-javascript)
