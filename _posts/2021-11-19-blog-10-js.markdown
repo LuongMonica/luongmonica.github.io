@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "Blog 10 - JavaScript pt.2"
+date:   2021-11-19 9:59:31 -0700
+categories: jekyll update
+published: false
+---
+![JavaScript](/assets/javascript.png)
+# **Intro**
+In last week's blog post, we started learning JavaScript, including what it was and some of the basics like data types, printing, and variables. We'll continue by going over conditionals and relevant operators. 
+
+# **Conditionals**
+Good ol' conditional statements: if/else if/else and switch statements. They are the way of controlling the flow of the program by executing blocks of code only if certain conditions are met. Conditionals allow us to make decisions about which code is executed as the program runs. If and switch statements have almost the same syntax as their Java versions.
+
+## If / Else If / Else
+If/else if/else statements check if a condition is true then executes that statement. If it evaluates to false, then it checks each else if statement to see if it's true. If none of them are true, it executes the false block. 
+
+```
+// example of if/else if/else statement
+
+let dayOfTheWeek = "Friday";
+
+if (dayOfTheWeek == "Monday") {
+    console.log(`Back to work, it's ${dayOfTheWeek}.`);
+} else if (dayOfTheWeek == "Wednesday") {
+    console.log(`It's ${dayOfTheWeek}, that means it's Hump Day!`);
+} else if (dayOfTheWeek == "Friday") {
+    console.log(`It's ${dayOfTheWeek} or as I like to say Fri-yay!`);
+} else {
+    console.log(`Just a plain old ${dayOfTheWeek} today.`);
+}
+// will print out: It's Friday or as I like to say Fri-yay!
+```
+
+## Switch
+Switch statements let you check if an expression is true by running it against mutliple cases or situations. It's important to use the `break` keyword so that the program will exit the block and not execute anymore code or check any other cases. Without a `break` statement, the first matching case would be run and continue onward to every other case whether or not it matches. When this happens, it's called a fall-through. This is because the program "falls through" each case afterwards and executes each one. Switch statments are faster to execute than multiple if/else if statements because it doesn't have to compare against each case if a match is found. Similar to the `else` keyword, switches use the `default` keyword. This block will execute if none of the other cases match. 
+
+```
+// example of switch statement
+
+let dayOfTheWeek = "Friday";
+
+switch (dayOfTheWeek) {
+    case "Monday": 
+        console.log(`Back to work, it's ${dayOfTheWeek}.`);
+        break;
+    case "Wednesday":
+        console.log(`It's ${dayOfTheWeek}, that means it's Hump Day!`);
+        break;
+    case "Friday":
+        console.log(`It's ${dayOfTheWeek} or as I like to say Fri-yay!`);
+        break;
+    default:
+        console.log(`Just a plain old ${dayOfTheWeek} today.`);
+        break;
+}
+// will print out: It's Friday or as I like to say Fri-yay!
+```
+
+## Comparison and Logical Operators
+The comparison operators are basically the same as any other language. They are:
+- `>` greater than
+- `>=` greater than or equal
+- `<` less than
+- `<=` less than or equal
+- `==` equal
+- `!=` not equal
+- `===` strict equal
+- `!==` strict not equal
+
+Now you might notice that there's strict and not strict equal and not equal. What's the difference? `===` will check both the *value* and the *data type*. `==` will only check the value. So, let's see that in action:
+```
+"25" === "25"      vs         "25" == "25"
+true                          true
+25 === 25          vs         25 == 25
+true                          true
+"25" === 25        vs         "25" == 25  
+false                         true
+```
+
+The logical operators are:
+- `||` OR
+- `&&` AND
+- `!` NOT
+
+If you look at the truth tables for AND and OR:
+![Truth Table - AND/OR](/assets/truth-tables.jpg)
+
+You'll see that for AND, if 'A' is false, it doesn't matter what the rest of the expression is, it will always evaluate to false. The reverse is true for OR. If 'A' is true, the expression will always evaluate to true. You can use this knowledge to perform short-circuit evaluation and bypass the execution of the rest of the statement.
+
+## Ternary Operator
+What if you needed to make a conditional statement with only 2 choices to choose from? Well as a lazy programmer, I don't want to type the whole `if (condition) { statement; } else {statement; }`. It's a lot of work and I just can't be bothered. Well as luck would have it, there's a compact syntax that will allow you to do just that. Enter in the blessing of the ternary operator: `condition ? statement : statement;`. If the condition evaluates to true it'll execute the first statement after the `?`. If it's false, it'll execute the second statement after the `:`.
+
+```
+// example of ternary 
+
+let mood = "happy";
+
+mood === "happy" ? console.log("Yay! Glad to see it!") : console.log("Sorry to hear that.")
+// prints Yay! Glad to see it!
+```
+
+# **Next Week**
+I'll probably continue JS next week so stay tuned!
+
+# **More Info**
+[MDN Docs - JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
+
+[Codecademy - JS](https://www.codecademy.com/learn/introduction-to-javascript)

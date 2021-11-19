@@ -3,7 +3,6 @@ layout: post
 title:  "Blog 9 - JavaScript pt.1"
 date:   2021-11-12 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 ![JavaScript](/assets/javascript.png)
 # **Intro**
@@ -13,18 +12,18 @@ In last week's blog post, I talked about the MEAN/MERN stack. I discussed each o
 First of all, what is JavaScript? It's a programming language, that alongside HTML and CSS, is one of the core technologies of the World Wide Web. JS is able to be run both on the client-side and server-side, with most web browsers being able to run it natively. I should point out that Java and JavaScript, although sharing a part of the name, are two completely different languages. That isn't to say they don't share some similarities in things like syntax, however. So, now that we know some more about JS, let's dive into its data types, how to declare variables, how to print, and other basics.
 
 ## Printing and Comments
-The first thing you have to do in every programming language is "Hello World" right? Well, in JS we act on the `console` object and use the `.log` method in order to print to the screen. Comments are the same as Java. Take a look at the code block below:
+The first thing you have to do in every programming language is "Hello World" right? Well, in JS we act on the `console` object and use the `.log` method in order to print to the screen. Comments are the same as Java. You don't have to end lines with `;`, but it's good to be in the habit of doing so. Take a look at the code block below:
 
 ```
 // single-line comment
 /* block or
 multi-line
 comment */
-console.log("Hello World")
+console.log("Hello World");
 ```
 
 ## Data Types
-In JS, there are 7 data types: string, number, boolean, null, undefined, symbol, and object. Strings, numbers, boolean, and null types are pretty standard to any programming language and don't need to be explained. The difference between null and undefined is that a variable will be undefined if it was declared but not given a value. Null, meanwhile, is the (absence of) value. Symbols are unique identifiers that won't explain more about yet. Finally, objects are just collections of data. The first 6 data types are considered primitive data types. 
+In JS, there are 7 data types: string, number, boolean, null, undefined, symbol, and object. Strings, numbers, boolean, and null types are pretty standard to any programming language and don't need to be explained. The difference between null and undefined is that a variable will be undefined if it was declared but not given a value. Null, meanwhile, is the absence of value. Symbols are unique identifiers that I won't explain more about yet. Finally, objects are just collections of data. The first 6 data types are considered primitive data types. 
 
 ## Variables
 Since JS is dynamically typed, you don't have to explicitly declare the data type of the variable. You can declare variables 3 ways, using the keywords: `var`, `let`, or `const`. `var` was the only general way to declare variables pre-ES6 (version 6 of ECMAScript or ES, another name for JS). `let` is the newer keyword introduced in ES6 and is often preferred. There are some differences between `var` and `let` but I won't get into it here. To read more about it, visit [this link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let). `const` is another way to declare a variable, however after declaration you aren't able to modify the value of that constant variable. 
