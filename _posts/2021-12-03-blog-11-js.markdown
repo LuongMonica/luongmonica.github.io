@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "Blog 11 - JavaScript pt.3"
+date:   2021-12-03 9:59:31 -0700
+categories: jekyll update
+published: false
+---
+![JavaScript](/assets/javascript.png)
+# **Intro**
+In last week's blog post, we continued learning JavaScript and went over concepts such as conditionals and relevant operators. Today we'll continue by talking about functions. 
+
+# **Functions**
+Functions - blocks of code that you can call multiple times for reusability. In JavaScript, there's multiple types of functions: function declarations that we're familiar with in any language, function expressions, and arrow functions. 
+
+It's important to know that JavaScript allows for function hoisting. Hoisting is where the interpreter moves the declaration of the function to the top of its scope, prior to the execution of code. This means that you can call a function before you declare it in the code. Before you start doing this, you should know that hoisting is considered bad practice because it can produce unexpected results. So be aware that hoisting (of functions, variables, and classes) exists in JS. However, you shouldn't use it. If you're curious about why JS has hoisting, read [here](https://stackoverflow.com/questions/15005098/why-does-javascript-hoist-variables).
+
+## **Function Declarations and Expressions**
+![Syntax of Function Declarations](/assets/js-function-declaration.jpg)<br/><font size="2.75px"><em>Syntax of Function Declarations</em></font>
+
+Function declarations are the way of creating a function that anyone who's programmed before is familiar with. To call the function and have it execute simply use the function's identifier. Here's another example that has default parameters. This is a feature available in ES6.
+
+```
+function sayHi(name = "stranger", day = "day") {
+    console.log(`Hi, ${name}. It's a nice ${day} today isn't it?`);
+}
+sayHi("Monica", "Friday"); // prints: Hi, Monica. It's a nice Friday today isn't it?
+sayHi(); // prints: Hi, stranger. It's a nice day today isn't it?
+```
+
+![Syntax of Function Expressions](/assets/js-function-expression.jpg)<br/><font size="2.75px"><em>Syntax of Function Expressions</em></font>
+
+Function expressions differ from declarations by ommitting the name of the function after the `function` keyword. Thus, they are also called anonymous functions. To call them, use the variable name that is storing the function. In the above image for example, you'd call it by saying `calculateArea(7,3);`. Function expressions are not hoisted so you can't call them before they're defined, not that you should explicitly use hoisting in the first place. 
+
+## **Arrow Functions**
+Arrow functions are a way of creating a function in a clear, concise way. Arrow functions are named that way because they use the notation of a "fat arrow" `=>` in its syntax. They were introduced in ES6. Look at the code block below for an example. Notice that the `function` keyword isn't used.
+
+```
+let fib = (num) => {
+    if (num === 0) return 0;
+    if (num === 1) return 1; 
+
+    var i = 1, j = 0;
+
+    while (num >= 1){
+        j = i + j
+        i = j - i
+        num--
+    }
+
+    return j;
+}
+```
+
+Since arrow functions were added in order to create functions in a clearer, more concise way, it's no surprise that you can actually write arrow functions in a few different ways in order to make it even more concise. There are 2 cases where you can use a simpler syntax: when you have 1 parameter and when you have a single line block for the function body. See the code block below:
+
+```
+# if 1 parameter, don't need to have parentheses () around the param
+const functionName = param1 => {};
+
+# if only a single line for function body, don't need curly braces {} or return keyword (called implicit return)
+const squareNum = num => num*num;
+```
+
+If you want to reduce your function body into a single line, don't forget that you can use the ternary operator for binary logic. Remember to write smarter not more. But of course, never choose shorter code over readability!
+
+```
+# before:
+const plantNeedsWater = (day) => {
+    if (day === 'Wednesday') {
+        return true;
+    } 
+    else {
+        return false;
+    }
+}
+
+# after:
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+```
+
+# **Next Time**
+Hope you learned a lot today. Happy Holidays and see you next semester!
+
+# **More Info**
+[MDN Docs - JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
+
+[Codecademy - JS](https://www.codecademy.com/learn/introduction-to-javascript)
