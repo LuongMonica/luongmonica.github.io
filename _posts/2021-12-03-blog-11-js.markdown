@@ -3,7 +3,6 @@ layout: post
 title:  "Blog 11 - JavaScript pt.3"
 date:   2021-12-03 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 ![JavaScript](/assets/javascript.png)
 # **Intro**
