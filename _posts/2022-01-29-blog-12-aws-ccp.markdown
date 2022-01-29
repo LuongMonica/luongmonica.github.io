@@ -33,7 +33,7 @@ The AWS Cloud Adoption Framework (CAF) is a set of guidance and best practices t
 The 6 perspectives are Business, People, Governance, Platform, Security, and Operations. The first (or left) 3 have a focus of business capabilities while the last (or right) 3 have a focus on technical capabilities. So for example, the Platform perspective consists of people like cloud architects and IT managers. Their job is to make sure they understand the cloud platform that they are migrating to and the services that they provide. They must be able to describe their target architecture in detail and can use the CAF for principles and patterns of developing solutions in the cloud. My mnemonic is Big Pink Gorilla Powerfully Slams Octopus. It's weird, I know.
 
 # **Next Time**
-Hope you learned a lot today. We'll continue AWS CCP discussion next week.
+Hope you learned a lot today. We'll continue the AWS CCP discussion next week.
 
 # **More Info**
 [AWS Certification](https://aws.amazon.com/certification/)
