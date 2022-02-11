@@ -5,7 +5,7 @@ date:   2022-02-11 9:59:31 -0700
 categories: jekyll update
 published: false
 ---
-![AWS Training and Certification](/assets/aws-training-and-certification.png)
+![AWS Training and Certification](/assets/aws-training-and-certification.jpg)
 # **Intro and Recap**
 Welcome back to my blog! This week we are continuing our discussion of the material that will most likely appear in the AWS Certified Cloud Pracitioner (CCP) Exam. Last time we went over a part of the first module, Cloud Concepts Overview, and briefly discussed 2 important things I learned: the 6 advantages of cloud computing and the AWS Cloud Adoption Framework (CAF). In this post, we'll go over Cloud Economics and Billing. Let's get started!
 

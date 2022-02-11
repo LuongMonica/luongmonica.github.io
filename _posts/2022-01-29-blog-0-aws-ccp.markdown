@@ -4,7 +4,7 @@ title:  "Blog 0: Studying for AWS Certified Cloud Practitioner pt.1"
 date:   2022-01-29 9:59:31 -0700
 categories: jekyll update
 ---
-![AWS Training and Certification](/assets/aws-training-and-certification.png)
+![AWS Training and Certification](/assets/aws-training-and-certification.jpg)
 # **Intro**
 Amazon Web Services (AWS) is the leading platform for cloud computing services. It dominates the world of cloud providers, having a fair margin over its other competitors, Azure and Google Cloud Platform (GCP). Getting an AWS certification helps you stand out from the crowd, allowing you to validate your knowledge and expertise on AWS and, in general, cloud computing. I have decided to go after the foundational certification of Cloud Practitioner (CCP) and I plan to take the exam fairly soon! In my blogs on AWS CCP, I'll talk about some of the important topics I've learned while studying for the exam, including cloud concepts, security and compliance, some different service categories, and billing and pricing. Let's get started!
 
