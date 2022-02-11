@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Blog 12: Studying for AWS Certified Cloud Practitioner pt.1"
+title:  "Blog 0: Studying for AWS Certified Cloud Practitioner pt.1"
 date:   2022-01-29 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 ![AWS Training and Certification](/assets/aws-training-and-certification.png)
 # **Intro**
@@ -26,11 +25,11 @@ The first one talks about using cloud computing because of its pricing models. I
 The mnemonic I came up for this was: Cappy Enables Capacity Speed Maintenance Globally. Mnemonics work best when they're personal and odd/funny. Anything that will help you remember a list of stuff. 
 
 ## **AWS Cloud Adoption Framework**
-The AWS Cloud Adoption Framework (CAF) is a set of guidance and best practices to help organizations build an approach to cloud computing across the org and throughout the IT lifecycle to accelerate successful cloud adoption. It's divided into 6 areas of focus, or "perspectives" which each have a set of responsibilities, or "capabilities". 
+The AWS Cloud Adoption Framework (CAF) is a set of guidance and best practices to help organizations build an approach to cloud computing across the org and throughout the IT lifecycle to accelerate successful cloud adoption. It's divided into 6 areas of focus, or "perspectives", which each have a set of responsibilities, or "capabilities". 
 
 ![AWS CAF](/assets/aws-caf.jpg)<br/><font size="2.75px"><em>Cloud Adoption Framework Perspectives</em></font>
 
-The 6 perspectives are Business, People, Governance, Platform, Security, and Operations. The first (or left) 3 have a focus of business capabilities while the last (or right) 3 have a focus on technical capabilities. So for example, the Platform perspective consists of people like cloud architects and IT managers. Their job is to make sure they understand the cloud platform that they are migrating to and the services that they provide. They must be able to describe their target architecture in detail and can use the CAF for principles and patterns of developing solutions in the cloud. My mnemonic is Big Pink Gorilla Powerfully Slams Octopus. It's weird, I know.
+The 6 perspectives are Business, People, Governance, Platform, Security, and Operations. The first (or left) 3 have a focus on business capabilities while the last (or right) 3 have a focus on technical capabilities. So for example, the Platform perspective consists of people like cloud architects and IT managers. Their job is to make sure they understand the cloud platform that they are migrating to and the services that they provide. They must be able to describe their target architecture in detail and can use the CAF for principles and patterns of developing solutions in the cloud. My mnemonic is Big Pink Gorilla Powerfully Slams Octopus. It's weird, I know.
 
 # **Next Time**
 Hope you learned a lot today. We'll continue the AWS CCP discussion next week.
