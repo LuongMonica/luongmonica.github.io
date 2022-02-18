@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 2: Studying for AWS Certified Cloud Practitioner pt.2"
+title:  "Blog 2: Studying for AWS Certified Cloud Practitioner pt.3"
 date:   2022-02-17 9:59:31 -0700
 categories: jekyll update
 published: false
