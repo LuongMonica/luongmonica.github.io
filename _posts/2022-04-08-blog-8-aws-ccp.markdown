@@ -3,7 +3,6 @@ layout: post
 title:  "Blog 8: Studying for AWS Certified Cloud Practitioner pt.9"
 date:   2022-04-01 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 ![AWS Training and Certification](/assets/aws-training-and-certification.jpg)
 # **Intro and Recap**

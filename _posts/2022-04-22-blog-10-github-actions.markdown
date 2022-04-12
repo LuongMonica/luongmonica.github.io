@@ -3,7 +3,6 @@ layout: post
 title:  "Blog 10: GitHub Actions"
 date:   2022-04-22 9:59:31 -0700
 categories: jekyll update
-published: false
 ---
 ![GitHub Actions Logo](/assets/gh-actions.jpg)
 # **Recap and Intro**
